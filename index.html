@@ -7,81 +7,93 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<header>
-    <nav class="navbar">
-        <ul class="nav-links">
-            <li><img class = "nav-logo" src="img/Holmesglen_logo_Bold_blue.png" ></li>
-            <li><a href="#" style=" background-color: #030303;"> Home </a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+
 
 <body>
-    <h3 style="text-align: center;">Image Gallery</h3>
-    <div class="div-container-gallery">
-        <div>
-            <p id="p-picture"> <img class = "div-img" src="img/London.jpg"> </p>
-            <p id="p-text">London is the capital city of England.</p>   
-        </div>
-        <div>
-            <p id="p-picture"> <img class = "div-img" src="img/Oslo.jpg" > </p>
-            <p id="p-text">Oslo is the capital city of Norway.</p>
-        </div>
-        <div>
-            <p id="p-picture"> <img class = "div-img" src="img/rome.jpg" > </p>
-            <p id="p-text">Rome is the capital city of Italy.</p>
-            
-        </div>
-        <div>
-            <p id="p-picture"> <img class = "div-img" src="img/bangkok.jpg" > </p>
-            <p id="p-text">Bangkok is the capital city of Thailand.</p>
-        </div>
-    </div>
-    <br>
-    <br>
-    <div class="div-container-form">
+    <header class="mb">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><img class = "nav-logo" src="img/Holmesglen_logo_Bold_blue.png" ></li>
+                <li><a href="#" style=" background-color: #030303;"> Home </a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mycontainer mb">
+        <section class="mb">
+            <h3 class="mb" style="text-align: center;">Image Gallery</h3>
+            <div class="div-container-gallery">
+                <div>
+                    <p id="p-picture"> <img class = "div-img" src="img/London.jpg"> </p>
+                    <p id="p-text">London is the capital city of England.</p>   
+                </div>
+                <div>
+                    <p id="p-picture"> <img class = "div-img" src="img/Oslo.jpg" > </p>
+                    <p id="p-text">Oslo is the capital city of Norway.</p>
+                </div>
+                <div>
+                    <p id="p-picture"> <img class = "div-img" src="img/rome.jpg" > </p>
+                    <p id="p-text">Rome is the capital city of Italy.</p>
+                </div>
+                <div>
+                    <p id="p-picture"> <img class = "div-img" src="img/bangkok.jpg" > </p>
+                    <p id="p-text">Bangkok is the capital city of Thailand.</p>
+                </div>
+            </div>
+        </section>
+
+       <section class="mb">
+            <form class="container-form">
+                <h3 style="margin-left: 15px">Product Enquiry From</h3>
+                <div>
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="input" name="fullname" value="John@mail.com" size="100%">
+                </div>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="input" name="email" value="John Smoth" size="100%">
+                </div>
+                <div>
+                    <label for="product">Product:</label><br>
+                    <select name="Product" id="input">
+                    <option value="blue">Select</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Message:</label><br>
+                    <textarea name="message" id="input" cols="97" rows="10" ></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="sub" > 
+                    <label for="sub">Subscribe to our newsletter</label>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" id="input">
+                </div>
+            </form>
+       </section>
         
-        <h3 style="margin-left: 10px;">Product Enquiry From</h3>
-        <div>
-            <label for="fullname">Full Name:</label><br>
-            <input type="text" id="bordercolor" name="fullname" value="John@mail.com" size="100%">
+    </main>
+
+    <footer>
+        <div class="footer-div">
+            <P class="footer-heading fz30">Main Heading - Front size 30px, Front Arial</P>
+            <p class="footer-heading fz24">Sub heading - Front size 24px, Front Arial</p>
+            <p class="fz16">Article text - Front size 16px, Front Arial</p>
+            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+            <p class="footer-heading fz18">Another heading - Front size 18px</p>
+            <p class="fz16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet a ligula non posuere. Nam aliquet enim vel dui mattis, at consequat augue egestas. Vivamus pretium justo sit amet dictum feugiat. Nulla pulvinar eget risus a gravida. Sed convallis commodo purus vitae elementum. Donec in sapien id sapien dapibus cursus nec ac sapien. Fusce ullamcorper urna sit amet metus efficitur malesuada. Donec ac sem vel sapien finibus sagittis nec a felis. Aenean purus nunc, ultricies id vestibulum eget, interdum sed nunc. Quisque consequat dictum odio.</p>
         </div>
-        <div>
-            <label for="email">Email:</label><br>
-            <input type="text" id="bordercolor" name="email" value="John Smoth" size="100%">
-        </div>
-        <div>
-            <label for="product">Product:</label><br>
-            <select name="Product" id="bordercolor">
-              <option value="blue">Select</option>
-              <option value="red">Red</option>
-              <option value="green">Green</option>
-            </select>
-        </div>
-        <div>
-            <label for="message">Message:</label><br>
-            <textarea name="message" id="bordercolor" cols="97" rows="10" ></textarea>
-        </div>
-        <div>
-            <input type="checkbox" name="sub" > 
-            <label for="sub">Subscribe to our newsletter</label>
-        </div>
-        <div>
-            <input type="submit" value="Submit" id="bordercolor" style="width:100%">
-        </div>
-    </div>
+    
+    </footer>
 </body>
 
-<footer>
-    <div>
-        
 
-    </div>
-
-</footer>
 </html>
 
 
